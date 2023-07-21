@@ -85,12 +85,6 @@ async def ask_all_questions(transcript_id):
     # Reset the index of the df DataFrame
     df.reset_index(drop=True, inplace=True)
     df = pd.concat([df,new_row], ignore_index=True)
-    df.rename(columns={'question_1':'OBS Name', 'question_2':'Company Name', 'question_3':'Package Feature Options',
-                'question_4':'Email', 'question_5':'Phone', 'question_6':'Address',
-                'question_7':'Hide Address', 'question_8':'Additional Locations', 'question_9':'Additional Contact Details',
-                'question_10':'Hours of Operation', 'question_11':'Top Services', 'question_12':'Existing Website',
-                'question_13':'Logo Status', 'question_14':'Views on Stock Photos', 'question_15':'Overall Design Preferences / Example Website',
-                'question_16':'Particulars / Specific Design Preferences', 'question_17':'Additional Design Notes Required'
-                }, inplace=True)
+    # df.rename(columns={}, inplace=True)
     df.to_csv('output.csv', index=False)
 
