@@ -15,11 +15,15 @@ Step 3: Install requirements
 ```
 pip install -r requirements.txt
 ```
+Step 5: Set AssemblyAI API Key
+```
+export ASSEMBLYAI_API_TOKEN=<API KEY HERE>
+```
 
-Step 4: Update ```questions.py``` with LeMUR Questions
+Step 6: Update ```questions.py``` with LeMUR Questions
 
-Step 5: Update ```audio_url.json``` with Audio URLs to process
+Step 7: Update ```audio_url.json``` with Audio URLs to process
 
-Step 6: Run ```python3 app.py```
+Step 8: Run ```python3 app.py```
 
-Step 7: View ```output.csv```
+Step 9: View ```output.csv```
